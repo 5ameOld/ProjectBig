@@ -7,8 +7,8 @@ public class RTSCameraController : MonoBehaviour {
 
     //private GameObject pGO;
     //GameObject pCamGO;
-    public GameObject rtsCamGO;
-    public GameObject pCamGO;
+    GameObject rtsCamGO;
+    GameObject pCamGO;
 
     bool invoked = false;
 
@@ -26,6 +26,9 @@ public class RTSCameraController : MonoBehaviour {
 
 	void Start ()
     {
+        pCamGO = GameObject.FindGameObjectWithTag("MainCamera");
+        rtsCamGO = GameObject.FindGameObjectWithTag("RTSCamera");
+
         rEndPosX = 55;
         rEndPosXe = 57;
         rEndPosY = 0;

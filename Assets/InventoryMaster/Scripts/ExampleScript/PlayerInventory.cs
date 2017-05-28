@@ -2,8 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Networking;
 
-public class PlayerInventory : MonoBehaviour
+public class PlayerInventory : NetworkBehaviour
 {
     public GameObject inventory;
     public GameObject characterSystem;
@@ -39,6 +40,11 @@ public class PlayerInventory : MonoBehaviour
     float currentArmor = 0;
 
     int normalSize = 3;
+
+    public void SetPlayerGO(GameObject pl)
+    {
+
+    }
 
     public void OnEnable()
     {
@@ -162,11 +168,11 @@ public class PlayerInventory : MonoBehaviour
 
     void Start()
     {
-        
-            moneyText = inventory.transform.GetChild(3).GetComponent<Text>();
-            UpdateMoney();
-            //Debug.Log("Done updating money on start");
-        
+        GameObject objbetween = GameObject.FindGameObjectWithTag("Canvas");
+        inventory = objbetween.transform.GetChild(0).gameObject;
+
+        moneyText = inventory.transform.GetChild(3).GetComponent<Text>(); 
+        UpdateMoney();        
         
         //if (HPMANACanvas != null)
         //{
@@ -316,7 +322,14 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(inputManagerDatabase.CharacterSystemKeyCode))
+        if (!isLocalPlayer)
+            return;
+
+        if (inputManagerDatabase == null)
+            inputManagerDatabase = (InputManager)Resources.Load("InputManager");
+
+
+        /*if (Input.GetKeyDown(inputManagerDatabase.CharacterSystemKeyCode))
         {
             if (!characterSystem.activeSelf)
             {
@@ -328,10 +341,11 @@ public class PlayerInventory : MonoBehaviour
                     toolTip.deactivateTooltip();
                 characterSystemInventory.closeInventory();
             }
-        }
+        }*/
 
         if (Input.GetKeyDown(inputManagerDatabase.InventoryKeyCode))
         {
+            
             if (!inventory.activeSelf)
             {
                 mainInventory.openInventory();

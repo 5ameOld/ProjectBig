@@ -25,7 +25,7 @@ public class SaveManager : MonoBehaviour {
         pd.playerPos = new float[3];
         //pd.playerInv = new List<Item>();
 
-        Load();
+        //Load();
     }
 
     public void Load()
@@ -59,6 +59,8 @@ public class SaveManager : MonoBehaviour {
 
     void DataUpdaterLoad()
     {
+        player = transform.Find("Player(Clone)").gameObject;
+        //player = GameObject.FindGameObjectWithTag("Player");
         //set player
         player.transform.position = new Vector3(pd.playerPos[0], pd.playerPos[1], pd.playerPos[2]);
         //set inventory
@@ -66,7 +68,7 @@ public class SaveManager : MonoBehaviour {
         //debug
         if (pd.playerInv.Length == 0)
         {
-            Debug.Log("u suck bro");
+            //Debug.Log("u suck bro");
         }
         for (int x = 0; x < pd.playerInv.Length; x += 2)
         {

@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Marketplace : MonoBehaviour {
+public class Marketplace : NetworkBehaviour {
 
     public int distanceToOpenStorage;
     public float timeToOpenStorage;
@@ -26,9 +27,13 @@ public class Marketplace : MonoBehaviour {
     Inventory inv;
     Tooltip tooltip;
 
+    public void SetPlayerGO(GameObject pl)
+    {
+        player = pl;
+    }
+
 	void Start ()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
         inv = inventory.GetComponent<Inventory>();
         ItemDataBaseList inventoryItemList = (ItemDataBaseList)Resources.Load("ItemDatabase");
 
@@ -42,8 +47,10 @@ public class Marketplace : MonoBehaviour {
 
 	void Update ()
     {
-        float distance = Vector3.Distance(this.gameObject.transform.position, player.transform.position);
+        if (!isLocalPlayer)
+            return;
 
+        float distance = Vector3.Distance(this.gameObject.transform.position, player.transform.position);
 
         if (distance <= distanceToOpenStorage && Input.GetKeyDown(inputManagerDatabase.StorageKeyCode))
         {

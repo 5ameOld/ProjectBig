@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
 [AddComponentMenu("Camera-Control/Mouse Orbit with zoom")]
-public class MouseOrbitImproved : MonoBehaviour
+public class MouseOrbitImproved : NetworkBehaviour
 {
 
-    public Transform targetCamera;
+    Transform targetCamera;
     public float distance = 5.0f;
     public float xSpeed = 120.0f;
     public float ySpeed = 120.0f;
@@ -23,9 +24,27 @@ public class MouseOrbitImproved : MonoBehaviour
     float x = 0.0f;
     float y = 0.0f;
 
+
     // Use this for initialization
     void Start()
     {
+        /*GameObject[] lol;
+        lol = new GameObject[GameObject.FindGameObjectsWithTag("Player").Length];
+        lol = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log("moi setup1");
+        foreach (GameObject easy in lol)
+        {
+            bool n1 = easy.GetComponent<NetworkIdentity>().isLocalPlayer;
+            Debug.Log(easy);
+            Debug.Log(n1);
+            if (n1)
+            {
+                targetCamera = easy.transform;
+            }
+            else
+                return;
+        }*/
+
         Vector3 angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
@@ -39,10 +58,15 @@ public class MouseOrbitImproved : MonoBehaviour
         }
     }
 
+
+    public void SetMainCam(Transform trans)
+    {
+        targetCamera = trans;
+    }
+
+
     void LateUpdate()
     {
-        if (targetCamera)
-        {
             x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
             y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
 
@@ -61,8 +85,7 @@ public class MouseOrbitImproved : MonoBehaviour
             Vector3 position = rotation * negDistance + targetCamera.position;
 
             transform.rotation = rotation;
-            transform.position = position;
-        }
+            transform.position = position;     
     }
 
     public static float ClampAngle(float angle, float min, float max)

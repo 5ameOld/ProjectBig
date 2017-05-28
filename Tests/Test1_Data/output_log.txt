@@ -1,0 +1,170 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8165
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.018 seconds
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on PNetworkManager
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 382)
+
+desktop: 1920x1080 144Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.696563 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1a54 -> priority: 1 
+  Thread -> id: 1a7c -> priority: 1 
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8165
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.017 seconds
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Programme\Programmieren\GitHub\ProjectBig\Tests\Test1_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on PNetworkManager
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 382)
+
+desktop: 1920x1080 144Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.760929 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4404 -> priority: 1 
+  Thread -> id: 175c -> priority: 1 
+The referenced script on this Behaviour (Game Object 'Item') is missing!
+ 
+(Filename:  Line: 1754)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.431129 ms
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1443.
+Total: 0.757028 ms (FindLiveObjects: 0.051199 ms CreateObjectMapping: 0.029257 ms MarkObjects: 0.419108 ms  DeleteObjects: 0.257218 ms)
+
+no file there
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+25
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnityException: Tag: Timer is not defined.
+  at (wrapper managed-to-native) UnityEngine.GameObject:FindGameObjectWithTag (string)
+  at StorageInventory.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+25
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'Item') is missing!
+ 
+(Filename:  Line: 1754)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.449902 ms
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1443.
+Total: 0.794087 ms (FindLiveObjects: 0.062171 ms CreateObjectMapping: 0.033645 ms MarkObjects: 0.435687 ms  DeleteObjects: 0.261851 ms)
+
+no file there
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+25
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnityException: Tag: Timer is not defined.
+  at (wrapper managed-to-native) UnityEngine.GameObject:FindGameObjectWithTag (string)
+  at StorageInventory.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+25
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

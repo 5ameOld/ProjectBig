@@ -46,6 +46,11 @@ public class StorageInventory : MonoBehaviour
 
     bool showStorage;
 
+    public void SetPlayerGO(GameObject pl)
+    {
+        player = pl;
+    }
+
     public void addItemToStorage(int id, int value)
     {
         Item item = itemDatabase.getItemByID(id);
@@ -58,7 +63,6 @@ public class StorageInventory : MonoBehaviour
         if (inputManagerDatabase == null)
             inputManagerDatabase = (InputManager)Resources.Load("InputManager");
 
-        player = GameObject.FindGameObjectWithTag("Player");
         inv = inventory.GetComponent<Inventory>();
         ItemDataBaseList inventoryItemList = (ItemDataBaseList)Resources.Load("ItemDatabase");
 
@@ -100,7 +104,6 @@ public class StorageInventory : MonoBehaviour
 
     void Update()
     {
-
         float distance = Vector3.Distance(this.gameObject.transform.position, player.transform.position);
 
         if (showTimer)

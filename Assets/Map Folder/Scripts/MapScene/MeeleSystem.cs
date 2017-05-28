@@ -1,24 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class MeeleSystem : MonoBehaviour {
+public class MeeleSystem : NetworkBehaviour {
 
     public int minDamage = 25;
     public int maxDamage = 50;
     public float weaponRange = 3.5f;
 
-    public Camera FPSCamera;
+    Camera FPSCamera;
 
     private ChopTree treeHealth;
 
     private int layerMask = 1 << 8;
 
-    
+
+
+    void Start()
+    {
+        
+    }
+
+    public void SetMainCam(Camera trans)
+    {
+        FPSCamera = trans;
+    }
 
 	// Update is called once per frame
 	void Update ()
     {
+
+        if (!isLocalPlayer)
+            return;
+
+
         layerMask = ~layerMask;
 
         Ray ray = FPSCamera.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));

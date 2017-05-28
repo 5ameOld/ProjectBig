@@ -66,6 +66,6 @@ public class EscHandler : MonoBehaviour {
         PlayerPrefs.DeleteAll();
 
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }

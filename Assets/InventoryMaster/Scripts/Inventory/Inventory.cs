@@ -280,7 +280,7 @@ public class Inventory : MonoBehaviour
     public void updateItemList()
     {
         ItemsInInventory.Clear();
-        Debug.Log(SlotContainer.transform.childCount);
+        //Debug.Log(SlotContainer.transform.childCount);
 
         for (int i = 0; i < SlotContainer.transform.childCount; i++)
         {
@@ -288,7 +288,7 @@ public class Inventory : MonoBehaviour
             if (trans.childCount != 0)
             {
                 ItemsInInventory.Add(trans.GetChild(0).GetComponent<ItemOnObject>().item);
-                Debug.Log("did it");
+                //Debug.Log("did it");
             }
         }
     }
