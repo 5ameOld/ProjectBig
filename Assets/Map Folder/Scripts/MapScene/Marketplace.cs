@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Marketplace : NetworkBehaviour {
+public class Marketplace : MonoBehaviour {
 
     public int distanceToOpenStorage;
     public float timeToOpenStorage;
@@ -47,15 +47,26 @@ public class Marketplace : NetworkBehaviour {
 
 	void Update ()
     {
-        if (!isLocalPlayer)
-            return;
-
         float distance = Vector3.Distance(this.gameObject.transform.position, player.transform.position);
 
         if (distance <= distanceToOpenStorage && Input.GetKeyDown(inputManagerDatabase.StorageKeyCode))
         {
             showStorage = !showStorage;
-            StartCoroutine(OpenInventoryWithTimer());
+            //StartCoroutine(OpenInventoryWithTimer());
+            OpenInventoryWithTimer();
+        }
+
+        if (distance > distanceToOpenStorage && showStorage)
+        {
+            showStorage = false;
+            if (inventory.activeSelf)
+            {
+                storageItems.Clear();
+                setListofStorage();
+                inventory.SetActive(false);
+                inv.deleteAllItems();
+            }
+            tooltip.deactivateTooltip();
         }
     }
 
@@ -73,6 +84,26 @@ public class Marketplace : NetworkBehaviour {
             itemDatabase = (ItemDataBaseList)Resources.Load("ItemDatabase");
     }
 
+
+    void OpenInventoryWithTimer()
+    {
+        if (showStorage)
+        {
+            inv.ItemsInInventory.Clear();
+            inventory.SetActive(true);
+            addItemsToInventory();
+        }
+        else
+        {
+            storageItems.Clear();
+            setListofStorage();
+            inventory.SetActive(false);
+            inv.deleteAllItems();
+            tooltip.deactivateTooltip();
+        }
+    }
+
+    /*
     IEnumerator OpenInventoryWithTimer()
     {
         if (showStorage)
@@ -96,7 +127,8 @@ public class Marketplace : NetworkBehaviour {
             inv.deleteAllItems();
             tooltip.deactivateTooltip();
         }
-    }
+    }*/
+
     void setListofStorage()
     {
         Inventory inv = inventory.GetComponent<Inventory>();
@@ -112,5 +144,4 @@ public class Marketplace : NetworkBehaviour {
         }
         iV.stackableSettings();
     }
-
 }

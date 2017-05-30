@@ -608,7 +608,7 @@ public class DragItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IEndDr
                 }
 
                 //dragging into marketplace
-                if (Inventory.GetComponent<Marketplace>() != null)
+                if (Inventory.tag == "Marketplace")
                 {
                     Debug.Log("dragging marketplace");
                     //Item itesss  = firstItemGameObject.          

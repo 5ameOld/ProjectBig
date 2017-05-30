@@ -119,7 +119,8 @@ public class StorageInventory : MonoBehaviour
         if (distance <= distanceToOpenStorage && Input.GetKeyDown(inputManagerDatabase.StorageKeyCode))
         {
             showStorage = !showStorage;
-            StartCoroutine(OpenInventoryWithTimer());
+            //StartCoroutine(OpenInventoryWithTimer());
+            OpenInventoryWithTimer();
         }
 
         if (distance > distanceToOpenStorage && showStorage)
@@ -139,6 +140,26 @@ public class StorageInventory : MonoBehaviour
         }
     }
 
+    void OpenInventoryWithTimer()
+    {
+        if (showStorage)
+        {
+            inv.ItemsInInventory.Clear();
+            inventory.SetActive(true);
+            addItemsToInventory();
+        }
+        else
+        {
+            storageItems.Clear();
+            setListofStorage();
+            inventory.SetActive(false);
+            inv.deleteAllItems();
+            tooltip.deactivateTooltip();
+        }
+    }
+
+
+    /*
     IEnumerator OpenInventoryWithTimer()
     {
         if (showStorage)
@@ -166,7 +187,7 @@ public class StorageInventory : MonoBehaviour
         }
 
 
-    }
+    }*/
 
 
 
